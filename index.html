@@ -56,14 +56,14 @@
       <div class="section-title">
         <p>SELECTED WORK</p>
         <h2>Projects</h2>
-        <span>문제 정의부터 평가 결과, 재현 절차와 해석 한계까지 각 저장소에 공개했습니다.</span>
+        <span>각 카드에는 이 프로젝트가 실제로 주장하는 결과와 공개 범위를 표시했습니다.</span>
       </div>
 
       <div class="project-grid">
         <article class="project-card featured">
           <div class="project-meta"><span>01</span><span>RAG · EVALUATION</span></div>
           <h3>Temporal RAG<br />Drift Monitor</h3>
-          <p>DB 업데이트 이후 새로 발생한 RAG 성능 저하를 label-free하게 모니터링합니다. 탐지 사례에는 intervention-based probing을 적용해 failure mechanism 후보를 좁힙니다.</p>
+          <p>DB 업데이트 이후 새로 위험해진 RAG 질문을 라벨 없이 우선순위화하고, evidence intervention으로 조사할 실패 구간을 좁힙니다.</p>
           <strong class="outcome">Future question-disjoint · AUROC 0.854 · Risk lift 3.59×</strong>
           <a href="https://github.com/yoon-chan-hyeok/temporal-rag-drift" target="_blank" rel="noreferrer">Repository →</a>
         </article>
@@ -71,7 +71,7 @@
         <article class="project-card featured">
           <div class="project-meta"><span>02</span><span>MULTI-AGENT · EVALUATION</span></div>
           <h3>Multi-Agent Failure<br />Localization</h3>
-          <p>Task-only requirements를 먼저 고정하고 execution trace를 시간순으로 검사해 final failure로 이어진 earliest unrecovered error를 agent·step 수준에서 찾습니다.</p>
+          <p>Task의 성공 조건을 먼저 고정하고 execution trace에서 이후에도 복구되지 않은 가장 이른 오류를 agent와 exact step으로 찾습니다.</p>
           <strong class="outcome">Exact-step 38.59% · +30.43%p vs Direct</strong>
           <a href="https://github.com/yoon-chan-hyeok/multi-agent-failure-localization" target="_blank" rel="noreferrer">Repository →</a>
         </article>
@@ -79,7 +79,7 @@
         <article class="project-card">
           <div class="project-meta"><span>03</span><span>OCR · MONITORING</span></div>
           <h3>Label-Free OCR<br />Quality Monitor</h3>
-          <p>Record-level anomaly와 batch-level distribution shift를 결합합니다. Gold label이 도착하기 전에 검토할 OCR 결과를 review queue로 정렬합니다.</p>
+          <p>정답 transcription이 도착하기 전에 record anomaly와 batch drift를 계산하고, 먼저 검수할 OCR 결과를 review queue로 정렬합니다.</p>
           <strong class="outcome">Installable CLI · Review queue · CI tests</strong>
           <a href="https://github.com/yoon-chan-hyeok/ocr-quality-monitoring" target="_blank" rel="noreferrer">Repository →</a>
         </article>
@@ -87,16 +87,16 @@
         <article class="project-card">
           <div class="project-meta"><span>04</span><span>VISION · CASE STUDY</span></div>
           <h3>Face Attendance<br />System</h3>
-          <p>RetinaFace·ArcFace 인식을 multi-frame enrollment와 ambiguity rejection에 연결하고, FastAPI·MariaDB·React 출결 workflow로 구성했습니다.</p>
-          <strong class="outcome">Architecture and decision-rule case study</strong>
+          <p>RetinaFace·ArcFace 인식을 multi-frame enrollment, ambiguity rejection과 출결 기록으로 연결한 설계 case study입니다.</p>
+          <strong class="outcome">Public scope · Architecture and decision rules</strong>
           <a href="https://github.com/yoon-chan-hyeok/face-attendance-system" target="_blank" rel="noreferrer">Case study →</a>
         </article>
 
         <article class="project-card traffic">
           <div class="project-meta"><span>05</span><span>TRANSPORTATION · CASE STUDY</span></div>
           <h3>Event Traffic<br />Delay Analysis</h3>
-          <p>OD·생활인구·버스·GIS 데이터를 결합해 행사 종료 후 수요 집중을 분석하고, hub·capacity·cost constraint가 있는 shuttle scenario로 변환했습니다.</p>
-          <strong class="outcome">Mobility evidence · operating scenario</strong>
+          <p>OD·생활인구·버스·GIS 데이터를 결합해 행사 종료 후 수요 집중을 분석하고, 3개 환승거점 셔틀 운영안으로 연결했습니다.</p>
+          <strong class="outcome">Public scope · Aggregates and operating scenario</strong>
           <a href="https://github.com/yoon-chan-hyeok/event-traffic-delay-analysis" target="_blank" rel="noreferrer">Case study →</a>
         </article>
       </div>
@@ -108,8 +108,8 @@
         <h2>운영에서 다시<br />확인할 수 있게.</h2>
       </div>
       <div class="about-copy">
-        <p>RAG, multi-agent system, OCR처럼 여러 단계가 연결된 AI 시스템을 다뤘습니다. 평균 성능보다 어떤 입력이 새로 위험해졌는지, 실패가 어느 단계에서 시작됐는지, 사람이 무엇을 먼저 확인해야 하는지에 관심이 있습니다.</p>
-        <p>선행 사례를 조사하고 작은 목업으로 가설을 확인한 뒤 평가 기준을 고정해 구현을 확장합니다. 결과가 기대와 다르면 데이터와 실행 단계를 나눠 다시 진단합니다. 코드에는 테스트, 재현 절차와 해석 한계를 함께 남깁니다.</p>
+        <p>RAG, multi-agent system과 OCR처럼 여러 단계가 연결된 AI 시스템을 다뤘습니다. 평균 성능보다 어떤 입력이 새로 위험해졌는지, 실패가 어느 단계에서 시작됐는지, 사람이 무엇을 먼저 확인해야 하는지에 관심이 있습니다.</p>
+        <p>선행 사례를 조사하고 작은 목업으로 가설을 확인한 뒤 평가 기준을 고정합니다. 결과가 기대와 다르면 데이터와 실행 단계를 나눠 다시 진단합니다. 공개 저장소에는 확인한 결과와 아직 검증하지 않은 범위를 구분해 적었습니다.</p>
         <a href="https://github.com/yoon-chan-hyeok" target="_blank" rel="noreferrer">프로필과 프로젝트 전체 보기 →</a>
       </div>
     </section>
