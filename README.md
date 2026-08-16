@@ -4,9 +4,9 @@
 
 - DB 업데이트 이후 Temporal RAG failure detection과 진단
 - Multi-agent exact-step failure localization
-- Label-free AI quality monitoring
+- Major-event transportation data analysis
+- Label-free OCR failure monitoring
 - 기존 face-attendance system 고도화 case study
-- Transportation data analysis case study
 
 공개 페이지: <https://yoon-chan-hyeok.github.io>
 

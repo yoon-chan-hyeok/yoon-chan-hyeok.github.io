@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="RAG failure detection, multi-agent failure localization과 AI 품질 모니터링을 다루는 윤찬혁의 AI/ML 포트폴리오." />
+  <meta name="description" content="AI와 데이터 시스템의 실패를 측정 가능한 신호로 바꾸고 개선 방법을 검증한 윤찬혁의 AI/ML 포트폴리오." />
   <meta name="theme-color" content="#f5f2ea" />
   <meta property="og:title" content="Yoon Chanhyuk, AI/ML Engineer" />
-  <meta property="og:description" content="Evaluation, monitoring, and failure localization under changing data and execution conditions." />
+  <meta property="og:description" content="Applied AI evaluation, data analysis, monitoring, and failure localization." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://yoon-chan-hyeok.github.io/" />
   <meta property="og:image" content="https://yoon-chan-hyeok.github.io/og.png" />
@@ -33,8 +33,8 @@
     <section class="hero" id="top">
       <div class="hero-copy">
         <p class="eyebrow">AI / ML ENGINEER · SEOUL</p>
-        <h1>AI 시스템의 <em>실패를 추적합니다.</em></h1>
-        <p class="lead">데이터와 실행 조건이 바뀐 뒤 성능이 낮아진 입력을 찾고, 실패가 시작된 구간과 운영자가 다음에 확인할 대상을 좁히는 도구를 만듭니다.</p>
+        <h1>AI·데이터 시스템의 <em>실패를 추적합니다.</em></h1>
+        <p class="lead">실제 실패와 데이터 현상을 측정 가능한 신호로 바꾸고, 처음 세운 가설이 맞는지 검증한 뒤 필요한 방법을 다시 설계합니다.</p>
         <div class="hero-links">
           <a class="primary-link" href="#work">프로젝트 보기 →</a>
           <a href="https://github.com/yoon-chan-hyeok" target="_blank" rel="noreferrer">GitHub profile ↗</a>
@@ -46,9 +46,9 @@
         <ul>
           <li>RAG failure detection after DB updates</li>
           <li>Multi-agent exact-step localization</li>
-          <li>OCR embedding drift and review queue</li>
+          <li>Event traffic data quality and capacity modeling</li>
         </ul>
-        <p class="school">서울과학기술대학교 교통공학 전공</p>
+        <p class="school">서울시립대학교 교통공학과·인공지능학과 복수전공 · 2026.08 졸업예정</p>
       </aside>
     </section>
 
@@ -56,7 +56,7 @@
       <div class="section-title">
         <p>SELECTED WORK</p>
         <h2>Projects</h2>
-        <span>각 프로젝트를 운영 제약, 질문, 접근과 검증 결과의 흐름으로 정리했습니다.</span>
+        <span>각 프로젝트에서 처음 무엇을 예상했고, 실제 결과를 보고 무엇을 바꿨는지 정리했습니다.</span>
       </div>
 
       <div class="project-grid">
@@ -76,28 +76,28 @@
           <a href="https://github.com/yoon-chan-hyeok/multi-agent-failure-localization" target="_blank" rel="noreferrer">Repository →</a>
         </article>
 
+        <article class="project-card traffic">
+          <div class="project-meta"><span>03</span><span>TRANSPORTATION · DATA ANALYSIS</span></div>
+          <h3>Major Event Travel Time<br />Delay Analysis</h3>
+          <p>대형 행사 뒤 이동 불편에서 출발한 개인 프로젝트입니다. 정류장 매칭 품질을 다시 점검하고 OD·체류인구·버스·GIS 데이터를 결합해, 수요 증가와 공급 proxy 감소가 함께 나타나는 패턴을 운영 시나리오로 연결했습니다.</p>
+          <strong class="outcome">Data quality audit · Isotonic model · 교내 우수상</strong>
+          <a href="https://github.com/yoon-chan-hyeok/event-traffic-delay-analysis" target="_blank" rel="noreferrer">Case study →</a>
+        </article>
+
         <article class="project-card">
-          <div class="project-meta"><span>03</span><span>OCR · MONITORING</span></div>
-          <h3>Label-Free OCR<br />Quality Monitor</h3>
-          <p>정답 transcription이 없는 동안 승인 데이터와 달라진 record와 batch를 찾고, 먼저 검수할 OCR 결과를 review queue로 정렬합니다.</p>
-          <strong class="outcome">Installable CLI · Review queue · CI tests</strong>
+          <div class="project-meta"><span>04</span><span>OCR · MONITORING</span></div>
+          <h3>Label-Free OCR<br />Failure Monitoring</h3>
+          <p>Gold transcription이 없는 환경을 가정해 confidence와 embedding novelty를 비교했습니다. Confidence가 예상보다 강했고, embedding의 추가 이득은 오류 유형마다 달랐습니다.</p>
+          <strong class="outcome">Confidence baseline · Embedding limits · CI tests</strong>
           <a href="https://github.com/yoon-chan-hyeok/ocr-quality-monitoring" target="_blank" rel="noreferrer">Repository →</a>
         </article>
 
         <article class="project-card">
-          <div class="project-meta"><span>04</span><span>VISION · SYSTEM HARDENING</span></div>
+          <div class="project-meta"><span>05</span><span>VISION · SYSTEM HARDENING</span></div>
           <h3>Face Attendance<br />System Hardening</h3>
-          <p>기존 얼굴 출결 시스템의 등록·식별·승인 흐름을 분석하고, RetinaFace·ArcFace 기반 식별에 multi-frame enrollment, ambiguity rejection과 IN/OUT 상태 전환을 보강했습니다.</p>
-          <strong class="outcome">Existing system hardening · Safer decision rules</strong>
+          <p>기존 얼굴 출결 시스템에서 비슷한 후보가 승인되는 사례를 확인하고 multi-frame enrollment, sample reranking과 top-1/top-2 margin을 적용했습니다. 등록 단계와 출결 단계의 계산량도 분리했습니다.</p>
+          <strong class="outcome">Existing system hardening · Ambiguity rejection</strong>
           <a href="https://github.com/yoon-chan-hyeok/face-attendance-system" target="_blank" rel="noreferrer">Case study →</a>
-        </article>
-
-        <article class="project-card traffic">
-          <div class="project-meta"><span>05</span><span>TRANSPORTATION · CASE STUDY</span></div>
-          <h3>Event Traffic<br />Delay Analysis</h3>
-          <p>혼잡 수치를 운영 판단으로 바꾸기 위해 OD·생활인구·버스·GIS 데이터를 결합하고, 지체의 단조 관계를 3개 환승거점 셔틀 시나리오에 반영했습니다.</p>
-          <strong class="outcome">Reproducible sample pipeline · Capacity scenario</strong>
-          <a href="https://github.com/yoon-chan-hyeok/event-traffic-delay-analysis" target="_blank" rel="noreferrer">Case study →</a>
         </article>
       </div>
     </section>
@@ -108,8 +108,8 @@
         <h2>운영에서 다시<br />확인할 수 있게.</h2>
       </div>
       <div class="about-copy">
-        <p>RAG, multi-agent system과 OCR처럼 여러 단계가 연결된 AI 시스템을 다뤘습니다. 평균 성능보다 어떤 입력이 새로 위험해졌는지, 실패가 어느 단계에서 시작됐는지, 사람이 무엇을 먼저 확인해야 하는지에 관심이 있습니다.</p>
-        <p>답변 분포, embedding, execution trace와 교통 데이터를 비교 가능한 신호로 구성하고, 왜 그 지표와 모델을 사용했는지 결과와 함께 설명합니다. 결과가 기대와 다르면 데이터와 실행 단계를 나눠 다시 진단합니다.</p>
+        <p>RAG, multi-agent system과 OCR에서는 어떤 입력이 새로 위험해졌는지, 실패가 어느 단계에서 시작됐는지를 다뤘습니다. 교통 프로젝트에서는 여러 출처의 데이터 품질을 먼저 확인하고, 수요와 공급을 함께 볼 수 있는 분석 단위를 만들었습니다.</p>
+        <p>연구 질문, 가설, 실험 방향, 평가와 결과 해석을 직접 설계하고 Codex를 구현과 반복 검증에 사용했습니다. 결과가 기대와 다르면 실패한 접근을 숨기지 않고 데이터와 실행 단계를 나눠 다시 진단합니다.</p>
         <a href="https://github.com/yoon-chan-hyeok" target="_blank" rel="noreferrer">프로필과 프로젝트 전체 보기 →</a>
       </div>
     </section>
