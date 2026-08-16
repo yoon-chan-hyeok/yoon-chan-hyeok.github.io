@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="AI 시스템의 성능 저하를 탐지하고 실패가 시작된 단계를 좁히는 윤찬혁의 AI/ML 포트폴리오." />
+  <meta name="description" content="RAG failure detection, multi-agent failure localization과 AI 품질 모니터링을 다루는 윤찬혁의 AI/ML 포트폴리오." />
   <meta name="theme-color" content="#f5f2ea" />
   <meta property="og:title" content="Yoon Chanhyuk, AI/ML Engineer" />
   <meta property="og:description" content="Evaluation, monitoring, and failure localization under changing data and execution conditions." />
@@ -44,7 +44,7 @@
       <aside class="intro-card">
         <p class="card-label">CURRENT WORK</p>
         <ul>
-          <li>Label-free RAG update monitoring</li>
+          <li>RAG failure detection after DB updates</li>
           <li>Multi-agent exact-step localization</li>
           <li>OCR embedding drift and review queue</li>
         </ul>
@@ -62,8 +62,8 @@
       <div class="project-grid">
         <article class="project-card featured">
           <div class="project-meta"><span>01</span><span>RAG · EVALUATION</span></div>
-          <h3>Temporal RAG<br />Drift Monitor</h3>
-          <p>DB 업데이트 직후 gold answer가 없는 상황에서, 업데이트 전후 RAG의 행동 변화로 위험 질문을 우선순위화하고 evidence intervention으로 조사 구간을 좁힙니다.</p>
+          <h3>Temporal RAG<br />Failure Detection</h3>
+          <p>DB 업데이트 직후 gold answer가 없는 상황에서, RAG의 행동 변화로 새롭게 실패했을 가능성이 높은 질문을 탐지하고 evidence intervention으로 조사 구간을 좁힙니다.</p>
           <strong class="outcome">Future question-disjoint · AUROC 0.854 · Risk lift 3.59×</strong>
           <a href="https://github.com/yoon-chan-hyeok/temporal-rag-drift" target="_blank" rel="noreferrer">Repository →</a>
         </article>
@@ -85,10 +85,10 @@
         </article>
 
         <article class="project-card">
-          <div class="project-meta"><span>04</span><span>VISION · CASE STUDY</span></div>
-          <h3>Face Attendance<br />System</h3>
-          <p>잘못된 출석 승인을 줄이기 위해 RetinaFace·ArcFace 인식을 multi-frame enrollment, ambiguity rejection과 IN/OUT 기록으로 연결했습니다.</p>
-          <strong class="outcome">Public scope · Architecture and decision rules</strong>
+          <div class="project-meta"><span>04</span><span>VISION · SYSTEM HARDENING</span></div>
+          <h3>Face Attendance<br />System Hardening</h3>
+          <p>기존 얼굴 출결 시스템의 등록·식별·승인 흐름을 분석하고, RetinaFace·ArcFace 기반 식별에 multi-frame enrollment, ambiguity rejection과 IN/OUT 상태 전환을 보강했습니다.</p>
+          <strong class="outcome">Existing system hardening · Safer decision rules</strong>
           <a href="https://github.com/yoon-chan-hyeok/face-attendance-system" target="_blank" rel="noreferrer">Case study →</a>
         </article>
 
@@ -96,7 +96,7 @@
           <div class="project-meta"><span>05</span><span>TRANSPORTATION · CASE STUDY</span></div>
           <h3>Event Traffic<br />Delay Analysis</h3>
           <p>혼잡 수치를 운영 판단으로 바꾸기 위해 OD·생활인구·버스·GIS 데이터를 결합하고, 지체의 단조 관계를 3개 환승거점 셔틀 시나리오에 반영했습니다.</p>
-          <strong class="outcome">Isotonic delay model · Capacity and cost scenario</strong>
+          <strong class="outcome">Reproducible sample pipeline · Capacity scenario</strong>
           <a href="https://github.com/yoon-chan-hyeok/event-traffic-delay-analysis" target="_blank" rel="noreferrer">Case study →</a>
         </article>
       </div>
