@@ -2,10 +2,10 @@
 
 윤찬혁의 AI/ML 포트폴리오 정적 사이트입니다.
 
-- RAG reliability와 temporal drift evaluation
+- DB 업데이트 이후 Temporal RAG failure detection과 진단
 - Multi-agent exact-step failure localization
 - Label-free AI quality monitoring
-- Computer vision system design case study
+- 기존 face-attendance system 고도화 case study
 - Transportation data analysis case study
 
 공개 페이지: <https://yoon-chan-hyeok.github.io>
