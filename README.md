@@ -1,6 +1,6 @@
 # yoon-chan-hyeok.github.io
 
-윤찬혁의 AI/ML 포트폴리오 정적 사이트입니다.
+현상을 데이터로 확인하고 가설을 고쳐가는 윤찬혁의 AI/ML 포트폴리오 정적 사이트입니다.
 
 - DB 업데이트 이후 Temporal RAG failure detection과 진단
 - Multi-agent exact-step failure localization
