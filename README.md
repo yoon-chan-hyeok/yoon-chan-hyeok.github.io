@@ -1,15 +1,15 @@
-# yoon-chan-hyeok.github.io
+# 윤찬혁 포트폴리오
 
-AI 시스템의 운영 문제를 측정 가능한 기준으로 바꾸고 검증하는 윤찬혁의 AI/ML 포트폴리오 정적 사이트입니다.
+교통공학과 인공지능을 함께 공부한 윤찬혁의 AI/ML 포트폴리오입니다. 실패 사례와 데이터를 따라가며 문제를 다시 정의하고, 실험과 코드로 확인한 과정을 담았습니다.
 
-- DB 업데이트 이후 Temporal RAG failure detection과 진단
-- Multi-agent exact-step failure localization
-- Major-event transportation data analysis
-- OCR failure risk monitoring
-- 기존 face-attendance system 고도화 case study
+- DB 업데이트 뒤 위험해진 RAG 질문 탐지와 근거 개입 실험
+- 멀티에이전트 실행 기록의 책임 에이전트와 실패 단계 추적
+- 여의도 불꽃축제의 교통 수요·공급 데이터 분석
+- 정답 전사본이 없는 시점의 OCR 검수 우선순위 생성
+- 기존 얼굴 출결 시스템의 등록·판정 과정 고도화
 
 공개 페이지: <https://yoon-chan-hyeok.github.io>
 
 연락: <ych1390@gmail.com>
 
-사이트는 별도 추적 도구나 개인정보 수집 없이 정적 HTML, CSS, JavaScript로 동작합니다.
+사이트는 별도 추적 도구나 개인정보 수집 없이 정적 HTML, CSS와 JavaScript로 동작합니다.

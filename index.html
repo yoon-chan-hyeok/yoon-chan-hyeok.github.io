@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="운영 제약이 있는 AI 시스템을 측정 가능한 문제로 바꾸고 데이터와 실험으로 검증하는 AI/ML 엔지니어 윤찬혁의 포트폴리오." />
+  <meta name="description" content="실패 사례와 데이터를 따라가며 문제를 다시 정의하고, 필요한 신호와 평가 방법을 설계하는 AI/ML 엔지니어 윤찬혁의 포트폴리오." />
   <meta name="theme-color" content="#f3f0e8" />
   <meta property="og:title" content="윤찬혁 | AI/ML Engineer" />
   <meta property="og:description" content="교통 데이터 분석에서 AI 시스템 평가까지, 문제를 정의하고 실험으로 검증합니다." />
@@ -27,9 +27,9 @@
   <header class="site-header">
     <a class="brand" href="#top" aria-label="처음으로">YOON<br />CHANHYEOK<span>.</span></a>
     <nav aria-label="주요 메뉴">
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#contact">Contact</a>
+      <a href="#about">소개</a>
+      <a href="#work">프로젝트</a>
+      <a href="#contact">연락</a>
       <a class="nav-github" href="https://github.com/yoon-chan-hyeok" target="_blank" rel="noreferrer">GitHub ↗</a>
     </nav>
   </header>
@@ -37,9 +37,9 @@
   <main id="main">
     <section class="hero" id="top">
       <div class="hero-main">
-        <p class="kicker"><span>AI EVALUATION · RELIABILITY</span><span>SEOUL, KR</span></p>
-        <h1><span>운영의 애매한 문제를</span><strong>측정 가능한 기준으로 바꿉니다.</strong></h1>
-        <p class="hero-lead">AI 시스템이 언제 실패하는지, 어떤 사례를 먼저 확인해야 하는지, 어디부터 고쳐야 하는지를 데이터와 실험으로 검증합니다.</p>
+        <p class="kicker"><span>AI / ML · DATA · EVALUATION</span><span>SEOUL, KR</span></p>
+        <h1><span>문제를 먼저 이해하고</span><strong>데이터로 끝까지 확인합니다.</strong></h1>
+        <p class="hero-lead">교통공학과 인공지능을 함께 공부한 윤찬혁입니다. 실제 현상과 시스템의 실패에서 질문을 찾고, 작은 실험으로 가설을 확인한 뒤 코드와 재현 절차로 남깁니다.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#work">핵심 프로젝트 보기</a>
           <a class="button button-quiet" href="mailto:ych1390@gmail.com">이메일 보내기 <span>↗</span></a>
@@ -65,7 +65,7 @@
           </div>
           <div>
             <dt>Focus</dt>
-            <dd>AI Evaluation · Reliability<br />Data-driven System Design</dd>
+            <dd>AI·ML 평가와 모니터링<br />데이터 분석과 시스템 구현</dd>
           </div>
         </dl>
       </aside>
@@ -74,11 +74,11 @@
     <section class="statement" id="about" data-reveal>
       <p class="section-index">01 / ABOUT</p>
       <div class="statement-grid">
-        <h2>가설보다 검증 가능한<br />근거를 우선합니다.</h2>
+        <h2>예상과 다른 결과에서<br />다음 질문을 찾습니다.</h2>
         <div class="statement-copy">
-          <p>처음부터 답을 정해놓지 않습니다. 선행 사례와 작은 목업으로 가설을 확인하고, 평가 기준을 고정한 뒤 구현을 넓힙니다.</p>
-          <p>결과가 예상과 다르면 모델을 더 복잡하게 만들기 전에 데이터 결합, 지표와 실행 단계를 나눠 확인합니다. RAG의 단순 shift 규칙, multi-agent의 trace chunking, OCR의 embedding 가설도 같은 방식으로 수정했습니다.</p>
-          <p class="statement-note">목표는 그럴듯한 결과가 아니라, 어떤 판단을 내렸고 어디까지 검증했는지 다시 확인할 수 있는 작업을 남기는 것입니다.</p>
+          <p>처음부터 답을 정해놓기보다 선행 사례와 작은 목업으로 가능성을 먼저 봅니다. 평가 기준을 정한 뒤에 구현과 실험 범위를 넓힙니다.</p>
+          <p>결과가 예상과 다르면 모델을 더 복잡하게 만들기 전에 데이터 결합, 지표, 실행 과정을 나눠 확인합니다. RAG의 단순 변화량 규칙, 멀티에이전트 로그 분할, OCR 임베딩 가설도 이 과정에서 방향을 바꿨습니다.</p>
+          <p class="statement-note">잘 나온 수치만 남기기보다, 어떤 판단을 했고 어디까지 확인했는지 다시 살펴볼 수 있는 작업을 만들고 싶습니다.</p>
         </div>
       </div>
     </section>
@@ -87,28 +87,28 @@
       <div class="section-heading">
         <p class="section-index">02 / HOW I WORK</p>
         <h2>일하는 방식</h2>
-        <p>빠르게 확인하되, 결론은 서두르지 않습니다.</p>
+        <p>빨리 만들어 보고, 근거가 생기면 넓혀 갑니다.</p>
       </div>
       <ol class="method-list">
         <li>
           <span>01</span>
           <h3>현상에서 질문을 찾습니다</h3>
-          <p>불꽃축제 뒤 길어진 귀가 시간이나 닮은 얼굴의 오승인처럼, 실제로 겪거나 관찰한 문제에서 시작합니다.</p>
+          <p>불꽃축제 뒤 길어진 귀가 시간이나 닮은 얼굴의 오승인처럼, 직접 겪거나 관찰한 문제에서 시작합니다.</p>
         </li>
         <li>
           <span>02</span>
           <h3>작은 실험으로 먼저 봅니다</h3>
-          <p>선행 사례를 확인하고 가벼운 목업을 만듭니다. 가능성과 가장 큰 실패 지점을 본 뒤 상세 구현으로 넘어갑니다.</p>
+          <p>선행 사례를 살펴보고 가벼운 목업을 만듭니다. 가설이 어느 정도 작동하는지 확인한 뒤 상세 구현으로 넘어갑니다.</p>
         </li>
         <li>
           <span>03</span>
-          <h3>반례가 나오면 다시 나눕니다</h3>
-          <p>기대한 결과가 나오지 않으면 숨기지 않습니다. 데이터, 지표, 실행 단계를 분리해 어느 가정이 틀렸는지 찾습니다.</p>
+          <h3>예상과 다르면 원인을 나눠 봅니다</h3>
+          <p>기대한 결과가 나오지 않으면 데이터, 지표, 실행 과정을 분리해 어느 가정이 맞지 않았는지 찾습니다.</p>
         </li>
         <li>
           <span>04</span>
           <h3>다시 확인할 수 있게 남깁니다</h3>
-          <p>테스트, 실행 절차와 해석 한계를 함께 정리합니다. 결과보다 판단 과정이 재현되는 것을 중요하게 봅니다.</p>
+          <p>테스트와 실행 절차, 해석할 수 있는 범위를 함께 정리합니다. 다른 사람이 판단 과정을 다시 확인할 수 있어야 한다고 생각합니다.</p>
         </li>
       </ol>
     </section>
@@ -116,24 +116,24 @@
     <section class="work" id="work" data-reveal>
       <div class="section-heading work-heading">
         <p class="section-index">03 / SELECTED WORK</p>
-        <h2>문제, 방법, 증거가 연결된 프로젝트</h2>
-        <p>핵심 연구와 추가 사례를 공개 증거의 범위에 맞춰 구분했습니다.</p>
+        <h2>문제를 바꿔 가며 진행한 5개의 프로젝트</h2>
+        <p>처음 세운 가설, 실제로 확인한 결과, 그 뒤에 바꾼 방법을 중심으로 정리했습니다.</p>
       </div>
 
       <div class="project-list">
-        <p class="project-group-label">CORE RESEARCH &amp; ENGINEERING</p>
+        <p class="project-group-label">SELECTED PROJECTS</p>
         <article class="project project-rag">
           <div class="project-number">01</div>
           <div class="project-body">
             <p class="project-type">CORE · RAG EVALUATION</p>
             <h3>Temporal RAG<br />Failure Detection</h3>
-            <p>DB가 바뀐 직후 최신 정답을 다시 만들 수 없다면, RAG의 행동 변화만 보고 새롭게 위험해진 질문을 찾을 수 있을까? 첫 업데이트에서 detector를 고정해 네 개의 미래 업데이트로 옮겼고, 탐지 뒤에는 intervention probe로 먼저 점검할 구간을 좁혔습니다.</p>
+            <p>지식 DB가 바뀔 때마다 모든 질문의 최신 정답을 다시 만들기는 어렵습니다. 답변 분포가 어떻게 달라졌는지를 이용해 새롭게 위험해진 질문을 찾고, 근거를 단계적으로 바꿔 보며 먼저 점검할 구간을 좁혔습니다.</p>
             <ul class="project-proof">
-              <li>Code · tests · derived results</li>
-              <li>L2 logistic future AUROC 0.883 · N=341</li>
+              <li>시간 순서를 지킨 미래 업데이트 평가</li>
+              <li>코드 · 테스트 · 파생 결과 · 재현 문서</li>
             </ul>
           </div>
-          <a class="project-link" href="https://github.com/yoon-chan-hyeok/temporal-rag-drift" target="_blank" rel="noreferrer" aria-label="Temporal RAG Failure Detection 저장소 보기">View repository <span>↗</span></a>
+          <a class="project-link" href="https://github.com/yoon-chan-hyeok/temporal-rag-drift" target="_blank" rel="noreferrer" aria-label="Temporal RAG Failure Detection 저장소 보기">저장소 보기 <span>↗</span></a>
         </article>
 
         <article class="project project-mas">
@@ -141,56 +141,55 @@
           <div class="project-body">
             <p class="project-type">CORE · MULTI-AGENT EVALUATION</p>
             <h3>Multi-Agent<br />Failure Localization</h3>
-            <p>긴 trace를 잘게 나누면 원인과 복구 맥락이 끊겼습니다. 그래서 실패 기록부터 읽는 대신 성공 조건을 먼저 고정하고, 끝까지 복구되지 않은 최초 위반을 찾는 방식으로 바꿨습니다.</p>
+            <p>긴 실행 기록을 잘게 나누자 원인과 복구 과정이 함께 끊겼습니다. 로그를 자르는 대신 과업의 성공 조건을 먼저 정하고, 끝까지 복구되지 않은 가장 이른 위반을 찾는 방식으로 바꿨습니다.</p>
             <ul class="project-proof">
-              <li>Code · tests · aggregate results</li>
-              <li>Exact-step accuracy 38.59%</li>
+              <li>실패한 로그 분할 실험과 방향 전환</li>
+              <li>책임 에이전트와 정확한 실패 단계 평가</li>
             </ul>
           </div>
-          <a class="project-link" href="https://github.com/yoon-chan-hyeok/multi-agent-failure-localization" target="_blank" rel="noreferrer" aria-label="Multi-Agent Failure Localization 저장소 보기">View repository <span>↗</span></a>
+          <a class="project-link" href="https://github.com/yoon-chan-hyeok/multi-agent-failure-localization" target="_blank" rel="noreferrer" aria-label="Multi-Agent Failure Localization 저장소 보기">저장소 보기 <span>↗</span></a>
+        </article>
+
+        <article class="project project-traffic">
+          <div class="project-number">03</div>
+          <div class="project-body">
+            <p class="project-type">TRANSPORTATION DATA ANALYSIS</p>
+            <h3>Yeouido Festival<br />Mobility Analysis</h3>
+            <p>불꽃축제 뒤 귀가 시간이 길어진 이유가 단순한 수요 증가뿐인지 궁금했습니다. SKT OD·체류인구, 버스·지하철 이용 자료, 정차횟수와 GIS를 결합해 수요 증가와 공급 감소를 함께 살폈습니다.</p>
+            <ul class="project-proof">
+              <li>동일 토요일 비교와 결합 품질 검증</li>
+              <li>공개 집계본 · 재현 코드 · 결과 페이지</li>
+            </ul>
+          </div>
+          <a class="project-link" href="https://github.com/yoon-chan-hyeok/yeouido-festival-mobility-analysis" target="_blank" rel="noreferrer" aria-label="Yeouido Festival Mobility Analysis 저장소 보기">결과와 코드 보기 <span>↗</span></a>
         </article>
 
         <article class="project project-ocr">
-          <div class="project-number">03</div>
-          <div class="project-body">
-            <p class="project-type">CORE · OCR MONITORING</p>
-            <h3>OCR Failure<br />Risk Monitoring</h3>
-            <p>정답 transcription이 없는 시점에 confidence와 embedding signal로 검수 우선순위를 만들 수 있는지 실험했습니다. Confidence가 강한 기준선이었고, embedding의 추가 이득은 오류 유형에 따라 달랐습니다.</p>
-            <ul class="project-proof">
-              <li>Runnable CLI · examples · tests</li>
-              <li>Original benchmark harness not public</li>
-            </ul>
-          </div>
-          <a class="project-link" href="https://github.com/yoon-chan-hyeok/ocr-quality-monitoring" target="_blank" rel="noreferrer" aria-label="OCR Failure Risk Monitoring 저장소 보기">View repository <span>↗</span></a>
-        </article>
-
-        <p class="project-group-label project-group-secondary">ADDITIONAL CASE STUDIES</p>
-        <article class="project project-traffic">
           <div class="project-number">04</div>
           <div class="project-body">
-            <p class="project-type">CASE STUDY · TRANSPORTATION DATA</p>
-            <h3>Yeouido Festival<br />Mobility Analysis</h3>
-            <p>불꽃축제 뒤 길어진 귀가 시간에서 시작했습니다. SKT OD·체류인구, 버스·지하철 이용 자료, TPSS 정차횟수와 GIS를 결합하고, 동일 토요일 비교와 join audit으로 분석을 다시 구성했습니다.</p>
+            <p class="project-type">OCR QUALITY MONITORING</p>
+            <h3>OCR Failure<br />Risk Monitoring</h3>
+            <p>정답 전사본이 없는 시점에 검수가 필요한 문서를 먼저 고를 수 있는지 실험했습니다. OCR 신뢰도는 예상보다 강했고, 임베딩 이탈도를 더했을 때의 이득은 오류 유형마다 달랐습니다.</p>
             <ul class="project-proof">
-              <li>Actual aggregates · source audit · CI</li>
-              <li>Public reproduction · predictive score withheld</li>
+              <li>신뢰도와 임베딩 이탈도 비교</li>
+              <li>실행 가능한 CLI · 예제 · 테스트</li>
             </ul>
           </div>
-          <a class="project-link" href="https://github.com/yoon-chan-hyeok/yeouido-festival-mobility-analysis" target="_blank" rel="noreferrer" aria-label="Yeouido Festival Mobility Analysis 저장소 보기">View case study <span>↗</span></a>
+          <a class="project-link" href="https://github.com/yoon-chan-hyeok/ocr-quality-monitoring" target="_blank" rel="noreferrer" aria-label="OCR Failure Risk Monitoring 저장소 보기">저장소 보기 <span>↗</span></a>
         </article>
 
         <article class="project project-face">
           <div class="project-number">05</div>
           <div class="project-body">
-            <p class="project-type">CASE STUDY · SYSTEM HARDENING</p>
-            <h3>Face Attendance<br />System Hardening</h3>
-            <p>기존 얼굴 출결 시스템에서 닮은 사람이 승인되는 사례를 직접 확인했습니다. Threshold만 보던 판정을 top-1과 top-2의 차이까지 확인하도록 바꾸고, 다중 프레임 등록과 다중 얼굴 중복 처리까지 전체 애플리케이션에 반영했습니다.</p>
+            <p class="project-type">FACE RECOGNITION SYSTEM</p>
+            <h3>Face Attendance<br />System Upgrade</h3>
+            <p>기존 얼굴 출결 시스템에서 닮은 사람이 잘못 승인되는 사례를 확인했습니다. 한 장만 등록하던 방식을 다중 프레임 등록으로 바꾸고, 1순위와 2순위 후보의 차이까지 확인하도록 판정 과정을 보완했습니다.</p>
             <ul class="project-proof">
-              <li>Full-stack source · build checks</li>
-              <li>Biometric data excluded · calibration pending</li>
+              <li>후보 재정렬 · 판정 여유값 · 중복 처리</li>
+              <li>전체 애플리케이션 코드 · 빌드 검사</li>
             </ul>
           </div>
-          <a class="project-link" href="https://github.com/yoon-chan-hyeok/face-attendance-system" target="_blank" rel="noreferrer" aria-label="Face Attendance System Hardening 저장소 보기">View case study <span>↗</span></a>
+          <a class="project-link" href="https://github.com/yoon-chan-hyeok/face-attendance-system" target="_blank" rel="noreferrer" aria-label="Face Attendance System 저장소 보기">저장소 보기 <span>↗</span></a>
         </article>
       </div>
     </section>
@@ -198,7 +197,7 @@
     <section class="experience" id="experience" data-reveal>
       <div class="section-heading">
         <p class="section-index">04 / EXPERIENCE</p>
-        <h2>공부한 것을 실제 문제에 써봤습니다</h2>
+        <h2>공부한 것을 실제 문제에 적용했습니다</h2>
       </div>
       <div class="experience-layout">
         <div class="timeline">
@@ -206,14 +205,14 @@
             <time>2026.03 ~ 현재</time>
             <div>
               <h3>지능형빅데이터 연구실</h3>
-              <p>Temporal RAG, multi-agent failure attribution, OCR monitoring과 얼굴 출결 시스템 고도화를 진행했습니다.</p>
+              <p>Temporal RAG, 멀티에이전트 실패 추적, OCR 품질 모니터링과 얼굴 출결 시스템 고도화를 진행했습니다.</p>
             </div>
           </article>
           <article>
             <time>2025 여름 · 6주</time>
             <div>
               <h3>교통공학과 연구인턴</h3>
-              <p>교차로 CCTV simulation 영상에서 차량을 탐지하고 tracking해 trajectory를 추출하는 실험을 했습니다.</p>
+              <p>교차로 CCTV 시뮬레이션 영상에서 차량을 탐지하고 추적해 이동 궤적을 추출하는 실험을 했습니다.</p>
             </div>
           </article>
           <article>
@@ -238,8 +237,8 @@
     <section class="closing" id="contact" data-reveal>
       <p class="section-index">05 / CONTACT</p>
       <div>
-        <h2>AI 시스템을 더 믿고 운영할 수 있게 만드는 일을 찾고 있습니다.</h2>
-        <p>AI/ML evaluation, reliability와 data-driven system design에 관심이 있습니다. 프로젝트나 채용 관련 연락은 이메일로 부탁드립니다.</p>
+        <h2>데이터를 보고 문제를 다시 정의할 수 있는 엔지니어로 일하고 싶습니다.</h2>
+        <p>AI·ML 평가와 모니터링, 데이터 분석, 실제 서비스에 연결되는 시스템 구현에 관심이 있습니다. 프로젝트나 채용 관련 연락은 이메일로 부탁드립니다.</p>
         <div class="contact-actions">
           <a class="button button-primary" href="mailto:ych1390@gmail.com">ych1390@gmail.com <span>↗</span></a>
           <a class="button button-dark" href="https://github.com/yoon-chan-hyeok" target="_blank" rel="noreferrer">GitHub 보기 <span>↗</span></a>
@@ -251,7 +250,7 @@
   <footer>
     <span>© <span id="year"></span> Yoon Chanhyeok</span>
     <a href="mailto:ych1390@gmail.com">ych1390@gmail.com</a>
-    <a href="#top">Back to top ↑</a>
+    <a href="#top">맨 위로 ↑</a>
   </footer>
   <script src="script.js?v=20260816-3"></script>
 </body>
