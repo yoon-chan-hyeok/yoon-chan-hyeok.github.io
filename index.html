@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="실패 사례와 데이터를 따라가며 문제를 다시 정의하고, 필요한 신호와 평가 방법을 설계하는 AI/ML 엔지니어 윤찬혁의 포트폴리오." />
+  <meta name="description" content="교통공학과 인공지능을 함께 공부하며 생활 속 교통 문제와 AI 시스템의 실패를 데이터와 실험으로 다뤄 온 윤찬혁의 포트폴리오." />
   <meta name="theme-color" content="#f3f0e8" />
   <meta property="og:title" content="윤찬혁 | AI/ML Engineer" />
-  <meta property="og:description" content="교통 데이터 분석에서 AI 시스템 평가까지, 문제를 정의하고 실험으로 검증합니다." />
+  <meta property="og:description" content="교통 데이터 분석, RAG 실패 탐지, 멀티에이전트 평가와 얼굴 출결 시스템 고도화 프로젝트." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://yoon-chan-hyeok.github.io/" />
   <meta property="og:image" content="https://yoon-chan-hyeok.github.io/og-v2.png" />
@@ -38,8 +38,8 @@
     <section class="hero" id="top">
       <div class="hero-main">
         <p class="kicker"><span>AI / ML · DATA · EVALUATION</span><span>SEOUL, KR</span></p>
-        <h1><span>문제를 먼저 이해하고</span><strong>데이터로 끝까지 확인합니다.</strong></h1>
-        <p class="hero-lead">교통공학과 인공지능을 함께 공부한 윤찬혁입니다. 실제 현상과 시스템의 실패에서 질문을 찾고, 작은 실험으로 가설을 확인한 뒤 코드와 재현 절차로 남깁니다.</p>
+        <h1><span>안녕하세요.</span><strong>AI와 데이터를 공부하는 윤찬혁입니다.</strong></h1>
+        <p class="hero-lead">서울시립대학교에서 교통공학과 인공지능을 복수전공하고 있습니다. 불꽃축제 뒤 길어진 귀가 시간처럼 직접 겪은 문제도 다뤘고, RAG와 멀티에이전트 시스템의 실패를 찾는 연구도 했습니다.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#work">핵심 프로젝트 보기</a>
           <a class="button button-quiet" href="mailto:ych1390@gmail.com">이메일 보내기 <span>↗</span></a>
@@ -56,15 +56,15 @@
         </div>
         <dl>
           <div>
-            <dt>Education</dt>
+            <dt>전공</dt>
             <dd>서울시립대학교<br />교통공학과 · 인공지능학과</dd>
           </div>
           <div>
-            <dt>Current</dt>
+            <dt>현재</dt>
             <dd>지능형빅데이터 연구실<br />2026.03부터 연구 수행</dd>
           </div>
           <div>
-            <dt>Focus</dt>
+            <dt>관심 분야</dt>
             <dd>AI·ML 평가와 모니터링<br />데이터 분석과 시스템 구현</dd>
           </div>
         </dl>
@@ -74,11 +74,11 @@
     <section class="statement" id="about" data-reveal>
       <p class="section-index">01 / ABOUT</p>
       <div class="statement-grid">
-        <h2>예상과 다른 결과에서<br />다음 질문을 찾습니다.</h2>
+        <h2>가설이 틀리면<br />다시 확인합니다.</h2>
         <div class="statement-copy">
-          <p>처음부터 답을 정해놓기보다 선행 사례와 작은 목업으로 가능성을 먼저 봅니다. 평가 기준을 정한 뒤에 구현과 실험 범위를 넓힙니다.</p>
-          <p>결과가 예상과 다르면 모델을 더 복잡하게 만들기 전에 데이터 결합, 지표, 실행 과정을 나눠 확인합니다. RAG의 단순 변화량 규칙, 멀티에이전트 로그 분할, OCR 임베딩 가설도 이 과정에서 방향을 바꿨습니다.</p>
-          <p class="statement-note">잘 나온 수치만 남기기보다, 어떤 판단을 했고 어디까지 확인했는지 다시 살펴볼 수 있는 작업을 만들고 싶습니다.</p>
+          <p>선행 사례를 찾아보고 작은 목업부터 만들어 보는 편입니다. 가능성이 보이면 평가 기준을 정하고 구현 범위를 넓힙니다.</p>
+          <p>결과가 예상과 다르면 처음 가정으로 돌아갑니다. 멀티에이전트 로그 분할은 성공 조건 기반 추적으로 바꿨고, RAG와 OCR도 실제 결과를 보고 탐지 신호와 해석 범위를 다시 정했습니다.</p>
+          <p class="statement-note">프로젝트 문서에는 처음 생각한 방법, 실패한 실험과 방향을 바꾼 이유도 같이 남겼습니다.</p>
         </div>
       </div>
     </section>
@@ -86,29 +86,29 @@
     <section class="method" data-reveal>
       <div class="section-heading">
         <p class="section-index">02 / HOW I WORK</p>
-        <h2>일하는 방식</h2>
-        <p>빨리 만들어 보고, 근거가 생기면 넓혀 갑니다.</p>
+        <h2>보통 이렇게 일합니다</h2>
+        <p>실제로 사용할 상황을 먼저 생각하고, 작게 확인한 뒤 범위를 넓힙니다.</p>
       </div>
       <ol class="method-list">
         <li>
           <span>01</span>
-          <h3>현상에서 질문을 찾습니다</h3>
-          <p>불꽃축제 뒤 길어진 귀가 시간이나 닮은 얼굴의 오승인처럼, 직접 겪거나 관찰한 문제에서 시작합니다.</p>
+          <h3>문제를 구체적으로 적습니다</h3>
+          <p>불꽃축제 뒤 귀가가 왜 늦어졌는지, 얼굴 출결에서 왜 다른 사람이 승인됐는지처럼 확인할 수 있는 질문으로 바꿉니다.</p>
         </li>
         <li>
           <span>02</span>
-          <h3>작은 실험으로 먼저 봅니다</h3>
-          <p>선행 사례를 살펴보고 가벼운 목업을 만듭니다. 가설이 어느 정도 작동하는지 확인한 뒤 상세 구현으로 넘어갑니다.</p>
+          <h3>작은 버전부터 만들어 봅니다</h3>
+          <p>선행 사례를 살펴보고 가벼운 목업을 만듭니다. 가능성이 확인되면 평가 기준을 정하고 구현을 넓힙니다.</p>
         </li>
         <li>
           <span>03</span>
-          <h3>예상과 다르면 원인을 나눠 봅니다</h3>
-          <p>기대한 결과가 나오지 않으면 데이터, 지표, 실행 과정을 분리해 어느 가정이 맞지 않았는지 찾습니다.</p>
+          <h3>안 되면 가정을 다시 봅니다</h3>
+          <p>기대한 결과가 나오지 않으면 데이터와 지표, 실행 과정을 다시 확인합니다. 처음 방법을 고집하지 않습니다.</p>
         </li>
         <li>
           <span>04</span>
-          <h3>다시 확인할 수 있게 남깁니다</h3>
-          <p>테스트와 실행 절차, 해석할 수 있는 범위를 함께 정리합니다. 다른 사람이 판단 과정을 다시 확인할 수 있어야 한다고 생각합니다.</p>
+          <h3>다시 볼 수 있게 남깁니다</h3>
+          <p>코드와 테스트, 실행 방법을 정리합니다. 결과를 어디까지 해석할 수 있는지도 README에 적습니다.</p>
         </li>
       </ol>
     </section>
@@ -116,8 +116,8 @@
     <section class="work" id="work" data-reveal>
       <div class="section-heading work-heading">
         <p class="section-index">03 / SELECTED WORK</p>
-        <h2>문제를 바꿔 가며 진행한 5개의 프로젝트</h2>
-        <p>처음 세운 가설, 실제로 확인한 결과, 그 뒤에 바꾼 방법을 중심으로 정리했습니다.</p>
+        <h2>주요 프로젝트</h2>
+        <p>자세한 과정과 결과는 각 GitHub 저장소에 정리했습니다.</p>
       </div>
 
       <div class="project-list">
@@ -127,7 +127,7 @@
           <div class="project-body">
             <p class="project-type">CORE · RAG EVALUATION</p>
             <h3>Temporal RAG<br />Failure Detection</h3>
-            <p>DB 업데이트 이후 성능이 나빠졌을 가능성이 높은 질문을 정답지 없이 선별하고, 실패가 생긴 구간을 진단하는 RAG 평가 프로젝트입니다.</p>
+            <p>DB가 업데이트된 직후, 정답지가 없어도 성능이 나빠졌을 가능성이 큰 질문부터 찾는 방법을 연구했습니다.</p>
           </div>
           <a class="project-link" href="https://github.com/yoon-chan-hyeok/temporal-rag-drift" target="_blank" rel="noreferrer" aria-label="Temporal RAG Failure Detection 저장소 보기">저장소 보기 <span>↗</span></a>
         </article>
@@ -137,7 +137,7 @@
           <div class="project-body">
             <p class="project-type">CORE · MULTI-AGENT EVALUATION</p>
             <h3>Multi-Agent<br />Failure Localization</h3>
-            <p>멀티에이전트 실행 로그에서 최종 실패로 이어진 가장 이른 미복구 지점과 책임 에이전트를 찾는 평가 프로젝트입니다.</p>
+            <p>실패한 멀티에이전트 실행에서 책임 에이전트와 실제로 고쳐야 할 단계를 찾는 방법을 만들었습니다.</p>
           </div>
           <a class="project-link" href="https://github.com/yoon-chan-hyeok/multi-agent-failure-localization" target="_blank" rel="noreferrer" aria-label="Multi-Agent Failure Localization 저장소 보기">저장소 보기 <span>↗</span></a>
         </article>
@@ -147,7 +147,7 @@
           <div class="project-body">
             <p class="project-type">TRANSPORTATION DATA ANALYSIS</p>
             <h3>Yeouido Festival<br />Mobility Analysis</h3>
-            <p>여의도 불꽃축제 전후의 이동·대중교통·공간 데이터를 결합해 귀가 지연의 수요와 공급 요인을 분석한 교통 데이터 프로젝트입니다.</p>
+            <p>불꽃축제 뒤 귀가가 늦어진 경험에서 시작해, 이동 수요와 대중교통 공급이 어떻게 달라졌는지 분석했습니다.</p>
           </div>
           <a class="project-link" href="https://github.com/yoon-chan-hyeok/yeouido-festival-mobility-analysis" target="_blank" rel="noreferrer" aria-label="Yeouido Festival Mobility Analysis 저장소 보기">결과와 코드 보기 <span>↗</span></a>
         </article>
@@ -157,7 +157,7 @@
           <div class="project-body">
             <p class="project-type">OCR QUALITY MONITORING</p>
             <h3>OCR Failure<br />Risk Monitoring</h3>
-            <p>정답 전사본이 없는 운영 환경에서 OCR 신뢰도와 임베딩 이탈도로 검수 우선순위가 높은 문서를 선별하는 프로젝트입니다.</p>
+            <p>정답 전사본이 아직 없을 때 OCR 결과 중 어떤 문서를 먼저 검수할지 정하는 방법을 실험했습니다.</p>
           </div>
           <a class="project-link" href="https://github.com/yoon-chan-hyeok/ocr-quality-monitoring" target="_blank" rel="noreferrer" aria-label="OCR Failure Risk Monitoring 저장소 보기">저장소 보기 <span>↗</span></a>
         </article>
@@ -167,7 +167,7 @@
           <div class="project-body">
             <p class="project-type">FACE RECOGNITION SYSTEM</p>
             <h3>Face Attendance<br />System Upgrade</h3>
-            <p>기존 얼굴 출결 시스템의 오승인을 줄이기 위해 다중 프레임 등록과 후보 판정 방식을 보완한 고도화 프로젝트입니다.</p>
+            <p>기존 얼굴 출결 시스템의 실제 오승인 사례를 바탕으로 등록 방식과 margin gap 판정을 보완했습니다.</p>
           </div>
           <a class="project-link" href="https://github.com/yoon-chan-hyeok/face-attendance-system" target="_blank" rel="noreferrer" aria-label="Face Attendance System 저장소 보기">저장소 보기 <span>↗</span></a>
         </article>
@@ -177,7 +177,7 @@
     <section class="experience" id="experience" data-reveal>
       <div class="section-heading">
         <p class="section-index">04 / EXPERIENCE</p>
-        <h2>공부한 것을 실제 문제에 적용했습니다</h2>
+        <h2>연구와 프로젝트 경험</h2>
       </div>
       <div class="experience-layout">
         <div class="timeline">
@@ -205,11 +205,11 @@
         </div>
 
         <aside class="credentials">
-          <p class="credentials-label">QUICK FACTS</p>
-          <div><span>Major</span><strong>Transportation Engineering<br />Artificial Intelligence</strong></div>
-          <div><span>Certificate</span><strong>ADsP · SQLD</strong></div>
-          <div><span>Award</span><strong>교내 데이터 분석 프로젝트 우수상</strong></div>
-          <div><span>Tools</span><strong>Python · SQL · PyTorch<br />scikit-learn · pandas</strong></div>
+          <p class="credentials-label">한눈에 보기</p>
+          <div><span>전공</span><strong>교통공학<br />인공지능</strong></div>
+          <div><span>자격</span><strong>ADsP · SQLD</strong></div>
+          <div><span>수상</span><strong>교내 데이터 분석 프로젝트 우수상</strong></div>
+          <div><span>도구</span><strong>Python · SQL · PyTorch<br />scikit-learn · pandas</strong></div>
         </aside>
       </div>
     </section>
@@ -217,8 +217,8 @@
     <section class="closing" id="contact" data-reveal>
       <p class="section-index">05 / CONTACT</p>
       <div>
-        <h2>데이터를 보고 문제를 다시 정의할 수 있는 엔지니어로 일하고 싶습니다.</h2>
-        <p>AI·ML 평가와 모니터링, 데이터 분석, 실제 서비스에 연결되는 시스템 구현에 관심이 있습니다. 프로젝트나 채용 관련 연락은 이메일로 부탁드립니다.</p>
+        <h2>AI·ML 엔지니어로 일할 기회를 찾고 있습니다.</h2>
+        <p>데이터를 분석해 원인을 찾고, 필요한 평가 방법과 시스템을 만드는 일에 관심이 있습니다. 프로젝트나 채용 관련 연락은 이메일로 부탁드립니다.</p>
         <div class="contact-actions">
           <a class="button button-primary" href="mailto:ych1390@gmail.com">ych1390@gmail.com <span>↗</span></a>
           <a class="button button-dark" href="https://github.com/yoon-chan-hyeok" target="_blank" rel="noreferrer">GitHub 보기 <span>↗</span></a>
